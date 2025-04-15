@@ -1,5 +1,5 @@
 {
-    "name": "ameax/datev-xml",
+    "name": "marvin-meller/datev-xml",
     "description": "Package to generate DATEV xml files",
     "keywords": [
         "ameax",
@@ -46,7 +46,8 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "marvin-meller/datev-xml": true
         }
     },
     "minimum-stability": "dev",
