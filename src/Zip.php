@@ -29,7 +29,7 @@ class Zip
 
     public function __destruct()
     {
-        $this->temporaryDirectory->delete();
+        // $this->temporaryDirectory->delete();
     }
 
     public function addFile(string $path, string $pathAndFilenameInZip): static
