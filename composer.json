@@ -46,8 +46,7 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
-            "phpstan/extension-installer": true,
-            "marvin-meller/datev-xml": true
+            "phpstan/extension-installer": true
         }
     },
     "minimum-stability": "dev",

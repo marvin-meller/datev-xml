@@ -219,9 +219,9 @@ class DatevDocumentData
         return $generator->getXmlString();
     }
 
-    public function generateZip(): string
+    public function generateZip(string $location): string
     {
-        $this->zip = new Zip;
+        $this->zip = new Zip($location);
         $this->zip->addFromString($this->generateXml(), 'document.xml');
         foreach ($this->data as $dataRow) {
             switch ($dataRow['type']) {

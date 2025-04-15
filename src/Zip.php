@@ -17,9 +17,9 @@ class Zip
     /**
      * @throws PathAlreadyExists
      */
-    public function __construct()
+    public function __construct(string $location)
     {
-        $this->temporaryDirectory = new TemporaryDirectory;
+        $this->temporaryDirectory = new TemporaryDirectory($location);
         $this->temporaryDirectory->create(); // name('ameax-datev')->force()->
 
         $this->zipArchive = new ZipArchive;
