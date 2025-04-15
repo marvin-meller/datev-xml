@@ -28,7 +28,7 @@ class DatevDocumentData
         public ?Carbon $date = null
     ) {
         if (! isset($this->date)) {
-            $this->date = Carbon::make('now');
+            $this->date = Carbon::now();
         }
     }
 
@@ -173,7 +173,7 @@ class DatevDocumentData
         $document = [
             'type' => self::TYPE_FILE,
             'name' => $nameWithExtension,
-            'date' => $date ?? new Carbon('now'),
+            'date' => $date ?? Carbon::now(),
             'filePath' => $filePath,
             'datevRepositoryData' => $datevRepositoryData,
         ];
@@ -192,7 +192,7 @@ class DatevDocumentData
         $document = [
             'type' => self::TYPE_SEPA_FILE,
             'name' => $nameWithExtension,
-            'date' => $date ?? new Carbon('now'),
+            'date' => $date ?? Carbon::now(),
             'filePath' => $filePath,
             'datevRepositoryData' => $datevRepositoryData,
         ];
