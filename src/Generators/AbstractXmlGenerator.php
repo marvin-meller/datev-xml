@@ -29,7 +29,8 @@ abstract class AbstractXmlGenerator
     public function validate(): bool
     {
         $validator = XmlValidator::validateString($this->xml, $this->getXsdPath());
-        $validator->throwExceptionOnErrors();
+        // TODO
+        // $validator->throwExceptionOnErrors();
 
         return $validator->isValid();
     }

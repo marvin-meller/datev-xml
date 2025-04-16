@@ -29,6 +29,7 @@ class Zip
 
     public function __destruct()
     {
+        // TODO
         // $this->temporaryDirectory->delete();
     }
 
